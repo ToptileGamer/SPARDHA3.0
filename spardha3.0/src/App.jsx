@@ -5,13 +5,15 @@ import "./App.css";
 
 // Import images
 import spardha from "./assets/spardha.jpeg";
-import cirbug from "./assets/spardha.jpeg";
+import cirbug from "./assets/cirbug.jpeg";
 import meme2 from "./assets/meme2.jpeg";
 import promver from "./assets/prom-ver.jpeg";
 import webcraft from "./assets/WebCraft_poster.png";
 import techtalk from "./assets/techtalk.jpeg";
 import charads from "./assets/charads.jpg";
 import terminalclash from "./assets/TERMINAL_CLASH.png";
+import trehun from "./assets/trehun.jpeg"
+
 
 // Import event pages
 import CircuitDebugging from "./pages/CircuitDebugging";
@@ -28,7 +30,7 @@ const Home = () => {
       {/* HEADER */}
       <header className="site-header">
         <div className="header-inner container">
-          <a href="#" className="brand">NEXUS 3.0</a>
+          <a href="#" className="brand">SPARDHA 3.0</a>
           <nav className="site-nav">
             <a href="#about">About</a>
             <a href="#technical">Technical</a>
@@ -51,6 +53,11 @@ const Home = () => {
           multi-disciplinary college event featuring both technical and
           non-technical competitions designed to showcase student talent,
           creativity, and teamwork across various domains.
+
+          With each edition, SPARDHA sets new benchmarks in student engagement, 
+          building lasting memories and strengthening its reputation as a prestigious festival in the academic calendar.
+           The blend of technical and non-technical competitions ensures holistic development, making it a key tradition for City Engineering College. 
+          SPARDHA thus stands out as a signature event fostering excellence, teamwork, and innovation through its diverse competitions and vibrant atmosphere.
         </p>
       </section>
 
@@ -64,6 +71,8 @@ const Home = () => {
               { img: promver, title: "Prompt Verse", path: "/prompt-verse" },
               { img: webcraft, title: "WebCraft", path: "/webcraft" },
               { img: terminalclash, title: "Terminal Clash", path: "/terminal-clash" },
+              { img: techtalk, title: "Tech Talk", path: "/tech-talk" },
+              { img: meme2, title: "Meme Creation", path: "/meme-creation" },
             ].map((event, i) => (
               <div key={i} className="col-lg-3 col-md-4 col-sm-6">
                 <div
@@ -88,9 +97,9 @@ const Home = () => {
         <div className="container">
           <div className="row g-4">
             {[
-              { img: meme2, title: "Meme Creation", path: "/meme-creation" },
-              { img: techtalk, title: "Tech Talk", path: "/tech-talk" },
               { img: charads, title: "Tech Charades", path: "/tech-charades" },
+              { img: trehun, title: "Tech-Treasure Hunt", path: "/" },
+
             ].map((event, i) => (
               <div key={i} className="col-lg-4 col-md-6">
                 <div
@@ -115,7 +124,7 @@ const Home = () => {
           <h3>Contact Us</h3>
           <p>
             Have queries? Reach us at{" "}
-            <a href="mailto:team@nexusfest.com">team@nexusfest.com</a>
+            <a href="techspardha@cityengineeringcollege.ac.in">team@Techspardha_cityengineeringcollege</a>
           </p>
         </div>
       </section>
@@ -126,7 +135,7 @@ const Home = () => {
           <a href="#about">About</a> | <a href="#technical">Technical</a> |{" "}
           <a href="#nontechnical">Non-Technical</a> | <a href="#contact">Contact</a>
         </div>
-        <p>© {year} NEXUS 3.0 — All Rights Reserved</p>
+        <p>© {year} City Engineering College  — All Rights Reserved</p>
       </footer>
     </>
   );
