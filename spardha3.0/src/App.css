@@ -1,5 +1,5 @@
 /* =====================================
-   NEXUS - FINAL STYLESHEET (Compact Cards)
+   NEXUS - FINAL STYLESHEET (1920x1080 Optimized)
    ===================================== */
 
 /* Google Fonts */
@@ -17,6 +17,16 @@ body {
   color: #e0e0e0;
   background: radial-gradient(circle at top, #0a0a0f 0%, #050507 100%);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Wrap content in a centered container */
+.container {
+  width: 100%;
+  max-width: 1600px; /* fits perfectly within 1920px */
+  margin: 0 auto;
 }
 
 /* =====================
@@ -29,18 +39,21 @@ body {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1.2rem 3rem;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .brand {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff;
   text-decoration: none;
@@ -54,8 +67,9 @@ body {
 .site-nav a {
   color: #e0e0e0;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   font-weight: 600;
+  font-size: 1rem;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -71,18 +85,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 600px;
+  width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
 .hero img {
   width: 100%;
+  max-width: 1500px;
   height: auto;
   object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
-  transition: transform 8s ease, filter 8s ease;
   animation: zoom-glow 15s ease-in-out infinite alternate;
 }
 
@@ -102,6 +116,8 @@ body {
    ===================== */
 .section {
   padding: 4rem 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .about h2,
@@ -114,31 +130,40 @@ body {
 }
 
 /* =====================
-   EVENTS GRID (Compact)
+   EVENT GRID
    ===================== */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
 .event {
   background: rgba(0, 10, 25, 0.8);
   border: 1px solid rgba(0, 255, 255, 0.3);
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.3s ease;
-  height: 360px; /* smaller overall height */
+  width: 350px;
+  height: 420px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .event:hover {
   transform: translateY(-8px) scale(1.05);
   box-shadow: 0 0 35px rgba(0, 255, 255, 1), 0 0 60px rgba(0, 255, 255, 0.7);
-  filter: brightness(1.3);
+  filter: brightness(1.2);
 }
 
 .event-img {
   width: 100%;
-  height: 180px; /* smaller image height */
-  object-fit: contain; /* ensures full image is visible */
-  background-color: #000; /* clean black background behind transparent parts */
+  height: 220px;
+  object-fit: contain; /* Ensures full image fits perfectly */
+  background-color: #000;
   border-bottom: 1px solid rgba(0, 255, 255, 0.2);
   transition: transform 0.5s ease;
 }
@@ -148,28 +173,28 @@ body {
 }
 
 .event-body {
-  padding: 1rem;
+  padding: 1.2rem;
   text-align: center;
-  flex-grow: 1;
+  width: 100%;
 }
 
 .event-body h3 {
   color: #00ffff;
   font-family: 'Orbitron', sans-serif;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   letter-spacing: 1px;
   font-size: 1.1rem;
 }
 
 .event-body p {
   color: #b0b0b0;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
 }
 
 .event-body .meta {
   color: #aaa;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 /* =====================
@@ -179,8 +204,8 @@ body {
   background: rgba(0, 10, 25, 0.7);
   border: 1px solid rgba(0, 255, 255, 0.3);
   padding: 2rem;
-  margin: 3rem auto;
-  max-width: 500px;
+  margin: 4rem auto;
+  max-width: 600px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
@@ -195,7 +220,6 @@ body {
 .contact-info a {
   color: #00ffff;
   text-decoration: none;
-  transition: text-shadow 0.3s ease;
 }
 
 .contact-info a:hover {
@@ -212,13 +236,13 @@ body {
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
+  width: 100%;
 }
 
 .foot-links a {
   color: #00ffff;
   text-decoration: none;
   margin: 0 0.5rem;
-  transition: text-shadow 0.3s ease;
 }
 
 .foot-links a:hover {
@@ -229,44 +253,35 @@ body {
 /* =====================
    RESPONSIVE
    ===================== */
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .event {
-    height: 340px;
+    width: 320px;
+    height: 400px;
   }
+
   .event-img {
-    height: 160px;
+    height: 200px;
   }
 }
 
-@media (max-width: 768px) {
-  .site-nav a {
-    margin-left: 1rem;
-    font-size: 0.9rem;
-  }
-
+@media (max-width: 992px) {
   .event {
-    height: 320px;
-  }
-
-  .event-img {
-    height: 140px;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 576px) {
   .brand {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
-  .event {
-    height: auto;
+  .site-nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
   }
 
   .event-img {
-    height: 130px;
-  }
-
-  .event-body h3 {
-    font-size: 1rem;
+    height: 160px;
   }
 }
