@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
+
+.event-page {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.event-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.event-content {
+  z-index: 2;
+  max-width: 900px;
+}
+
+.event-content h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  color: #00ffff;
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.event-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.poster {
+  margin-top: 2rem;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.back-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #00ffff;
+  background: transparent;
+  color: #00ffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffcc;
+}
