@@ -40,12 +40,13 @@ const Home = () => {
     { img: terminalPoster, title: "Terminal Clash", path: "/terminal-clash" },
     { img: meme2, title: "Meme Creation", path: "/meme-creation" },
     { img: techtalk, title: "Tech Talk", path: "/tech-talk" },
+    { img: cqp2, title: "Game of Tetrons", path: "/game-of-tetrons" },
   ];
 
   const nonTechnicalEvents = [
     { img: charadsPoster, title: "Tech Charades", path: "/tech-charades" },
     { img: trehunPoster, title: "Treasure Hunt", path: "/treasure-hunt" },
-    { img: cqp2, title: "Game of Tetrons", path: "/game-of-tetrons" },
+    
   ];
 
   return (
