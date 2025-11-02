@@ -1,6 +1,6 @@
 import React from "react";
 import "./EventPage.css";
-import bg from "../assets/circuitdebuggingposter.jpeg";
+import bg from "../assets/posters/circuitdebuggingposter.jpeg";
 
 const CircuitDebugging = () => {
   return (
@@ -43,7 +43,7 @@ const CircuitDebugging = () => {
             </p>
 
             <a
-              href="https://forms.gle/your-form-link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe_0S14M37WCWM8Sgu5PxvhQCS5gGhfsJN18-V8QttOX_Opmg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="register-btn"
@@ -83,17 +83,17 @@ const CircuitDebugging = () => {
           <p>
             <strong>Event Coordinator:</strong> Rahul S<br />
             <strong>Phone:</strong> +91 98765 43210<br />
-            <strong>Email:</strong> rahul@cityengineeringcollege.ac.in
+            <strong>Email:</strong> {" "}
+              <a href="mailto:techspardha@cityengineeringcollege.ac.in">
+                techspardha@cityengineeringcollege.ac.in
+              </a>
           </p>
         </div>
 
         {/* Social Links */}
         <div className="social-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/spardha__3.0?igsh=YnE4NGd3cG83azN2" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
-          </a>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
           </a>
         </div>
       </section>

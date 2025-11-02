@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./EventPage.css";
-import bg from "../assets/memecreationposter.jpeg";
+import bg from "../assets/posters/memecreationposter.jpeg";
 
 const MemeCreation = () => {
   const navigate = useNavigate();
@@ -31,7 +31,12 @@ const MemeCreation = () => {
               make the audience laugh while delivering a message.
             </p>
 
-            <a className="register-btn" href="#register">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe_0S14M37WCWM8Sgu5PxvhQCS5gGhfsJN18-V8QttOX_Opmg/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="register-btn"
+            >
               Register Now
             </a>
           </div>
@@ -47,10 +52,17 @@ const MemeCreation = () => {
             <h3>Rules</h3>
             <p>No plagiarism or offensive content.</p>
           </div>
-          <div>
-            <h3>Contact</h3>
-            <p>meme@cityengineeringcollege.ac.in</p>
-          </div>
+          <strong>Email:</strong> {" "}
+              <a href="mailto:techspardha@cityengineeringcollege.ac.in">
+                techspardha@cityengineeringcollege.ac.in
+              </a>
+        </div>
+        <div className="social-links">
+          <div className="social-links">
+          <a href="https://www.instagram.com/spardha__3.0?igsh=YnE4NGd3cG83azN2" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+          </a>
+        </div>
         </div>
       </section>
     </div>

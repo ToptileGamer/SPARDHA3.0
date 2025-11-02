@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./EventPage.css";
-import bg from "../assets/trehun.jpeg";
+import bg from "../assets/main_page_banners/trehun.jpeg";
 
 const TreasureHunt = () => {
   const navigate = useNavigate();
@@ -30,9 +30,14 @@ const TreasureHunt = () => {
               A thrilling adventure across campus filled with clues, codes, and
               challenges. Teamwork and speed decide your fate!
             </p>
-            <a className="register-btn" href="#register">
-              Register Now
-            </a>
+            <button
+                        className="register-btn"
+                        onClick={() =>
+                          window.open("https://docs.google.com/forms/d/e/1FAIpQLSe_0S14M37WCWM8Sgu5PxvhQCS5gGhfsJN18-V8QttOX_Opmg/viewform?usp=dialog", "_blank")
+                        }
+                      >
+                        Register Now
+                      </button>
           </div>
         </div>
 
@@ -46,9 +51,18 @@ const TreasureHunt = () => {
             <p>Teams must stay together. No external help.</p>
           </div>
           <div>
-            <h3>Contact</h3>
-            <p>treasure@cityengineeringcollege.ac.in</p>
+            <strong>Contact:</strong> {" "}
+              <a href="mailto:techspardha@cityengineeringcollege.ac.in">
+                techspardha@cityengineeringcollege.ac.in
+              </a>
           </div>
+        </div>
+        <div className="social-links">
+          <div className="social-links">
+          <a href="https://www.instagram.com/spardha__3.0?igsh=YnE4NGd3cG83azN2" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+          </a>
+        </div>
         </div>
       </section>
     </div>

@@ -4,16 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 // assets
-import spardha from "./assets/spardha.jpeg";
-import cirbug from "./assets/cirbug.jpeg";
-import meme2 from "./assets/meme2.jpeg";
-import promverPoster from "./assets/prom-ver.jpeg";
-import webcraftPoster from "./assets/WebCraft_poster.png";
-import techtalk from "./assets/techtalk.jpeg";
-import charadsPoster from "./assets/charads.jpg";
-import terminalPoster from "./assets/TERMINAL_CLASH.png";
-import trehunPoster from "./assets/trehun.jpeg";
-import cqp2 from "./assets/Cqp2.png";
+import spardha from "./assets/main_page_banners/spardha.jpeg";
+import cirbug from "./assets/main_page_banners/cirbug.jpeg";
+import meme2 from "./assets/main_page_banners/meme2.jpeg";
+import promverPoster from "./assets/main_page_banners/prom-ver.jpeg";
+import webcraftPoster from "./assets/main_page_banners/WebCraft_poster.png";
+import techtalk from "./assets/main_page_banners/techtalk.jpeg";
+import charadsPoster from "./assets/main_page_banners/charads.jpg";
+import terminalPoster from "./assets/main_page_banners/TERMINAL_CLASH.png";
+import trehunPoster from "./assets/main_page_banners/trehun.jpeg";
+import cqp2 from "./assets/main_page_banners/Cqp2.png";
 
 // pages
 import CircuitDebugging from "./pages/CircuitDebugging";
@@ -38,7 +38,6 @@ const Home = () => {
     { img: promverPoster, title: "Prompt Verse", path: "/prompt-verse" },
     { img: webcraftPoster, title: "WebCraft", path: "/webcraft" },
     { img: terminalPoster, title: "Terminal Clash", path: "/terminal-clash" },
-    { img: meme2, title: "Meme Creation", path: "/meme-creation" },
     { img: techtalk, title: "Tech Talk", path: "/tech-talk" },
     { img: cqp2, title: "Game of Tetrons", path: "/game-of-tetrons" },
   ];
@@ -46,6 +45,7 @@ const Home = () => {
   const nonTechnicalEvents = [
     { img: charadsPoster, title: "Tech Charades", path: "/tech-charades" },
     { img: trehunPoster, title: "Treasure Hunt", path: "/treasure-hunt" },
+    { img: meme2, title: "Meme Creation", path: "/meme-creation" },
     
   ];
 
@@ -151,7 +151,7 @@ const Home = () => {
                       <button
                         className="register-btn"
                         onClick={() =>
-                          window.open("https://forms.gle/exampleform", "_blank")
+                          window.open("https://docs.google.com/forms/d/e/1FAIpQLSe_0S14M37WCWM8Sgu5PxvhQCS5gGhfsJN18-V8QttOX_Opmg/viewform?usp=dialog", "_blank")
                         }
                       >
                         Register Now
@@ -173,6 +173,7 @@ const Home = () => {
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>
+              
             </p>
           </div>
         </section>
@@ -185,10 +186,10 @@ const Home = () => {
           <a href="#nontechnical">Non-Technical</a> | <a href="#contact">Contact</a>
         </div>
         <p>© {year} City Engineering College — All Rights Reserved</p>
-        <p>Designed and Developed by J Gautham</p>
+        <p>Designed and Developed by<strong> J Gautham </strong> </p>
         <p>
-          Contact me at{" "}
-          <a href="mailto:jgautham42@gmail.com">jgautham42@gmail.com</a>
+          Contact me {" "}
+          <a href="mailto:jgautham42@gmail.com">Here</a>
         </p>
       </footer>
     </>
