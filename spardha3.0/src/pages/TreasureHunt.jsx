@@ -19,7 +19,7 @@ const TreasureHunt = () => {
           ← Back to Events
         </button>
 
-        <h2>Non-Technical Event</h2>
+        <h2>NoTechnical Event</h2>
         <p className="subtitle">Find clues, solve puzzles, and race to victory!</p>
 
         <div className="poster-section">

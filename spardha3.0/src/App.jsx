@@ -34,19 +34,18 @@ const Home = () => {
   useEffect(() => setYear(new Date().getFullYear()), []);
 
   const technicalEvents = [
-    { img: cirbug, title: "Circuit Debugging", path: "/circuit-debugging" },
-    { img: promverPoster, title: "Prompt Verse", path: "/prompt-verse" },
-    { img: webcraftPoster, title: "WebCraft", path: "/webcraft" },
-    { img: terminalPoster, title: "Terminal Clash", path: "/terminal-clash" },
-    { img: techtalk, title: "Tech Talk", path: "/tech-talk" },
-    { img: cqp2, title: "Game of Tetrons", path: "/game-of-tetrons" },
+    { img: cirbug, title: "Circuit Debugging", date: "Date: 21 November 2025", path: "/circuit-debugging" },
+    { img: promverPoster, title: "Prompt Verse", date: "Date: 20 November 2025", path: "/prompt-verse" },
+    { img: webcraftPoster, title: "WebCraft", date: "Date: 21 November 2025", path: "/webcraft" },
+    { img: terminalPoster, title: "Terminal Clash", date: "Date: 20 November 2025", path: "/terminal-clash" },
+    { img: techtalk, title: "Tech Talk", date: "Date: 20 November 2025", path: "/tech-talk" },
+    { img: cqp2, title: "Game of Tetrons", date: "Date: 20 November 2025", path: "/game-of-tetrons" },
   ];
 
   const nonTechnicalEvents = [
-    { img: charadsPoster, title: "Tech Charades", path: "/tech-charades" },
-    { img: trehunPoster, title: "Treasure Hunt", path: "/treasure-hunt" },
-    { img: meme2, title: "Meme Creation", path: "/meme-creation" },
-    
+    { img: charadsPoster, title: "Tech Charades", date: "Date: 21 November 2025", path: "/tech-charades" },
+    { img: trehunPoster, title: "Treasure Hunt", date: "Date: 21 November 2025", path: "/treasure-hunt" },
+    { img: meme2, title: "Meme Creation", date: "Date: 20 November 2025", path: "/meme-creation" },
   ];
 
   return (
@@ -83,20 +82,16 @@ const Home = () => {
 
         {/* ABOUT */}
         <section id="about" className="section about">
+          <h5 className="text-center mx-auto">IEEE STUDENTS WILL BE GETTING 20% DISCOUNT ON ANY EVENT REGISTRATION</h5>
           <h2>About SPARDHA 3.0</h2>
           <p className="text-center mx-auto" style={{ maxWidth: "900px" }}>
-            SPARDHA 3.0, hosted by City Engineering College, is a vibrant
-            multi-disciplinary college event featuring both technical and
-            non-technical competitions, designed to showcase student talent,
-            creativity, and teamwork across various domains. SPARDHA encourages
-            participation from all college students, creating a platform for
-            national and regional representation.
-            <br /><br />
-            With each edition, SPARDHA sets new benchmarks in student engagement,
-            building lasting memories and strengthening its reputation as a
-            prestigious festival in the academic calendar. The blend of technical
-            and non-technical competitions ensures holistic development, making it
-            a key tradition for City Engineering College.
+            SPARDHA 3.0 ,hosted by City Engineering College, is a vibrant multi-disciplinary college event featuring both technical and non-technical competitions, 
+            designed to showcase student talent, creativity, and teamwork across various domains.
+SPARDHA encourages participation from all college students, creating a platform for national and regional representation.
+<br></br>
+With each edition, SPARDHA sets new benchmarks in student engagement, building lasting memories and strengthening its reputation as a prestigious festival in the academic calendar. 
+The blend of technical and non-technical competitions ensures holistic development, making it a key tradition for City Engineering College. 
+SPARDHA thus stands out as a signature event fostering excellence, teamwork, and innovation through its diverse competitions and vibrant atmosphere.
           </p>
         </section>
 
@@ -116,10 +111,11 @@ const Home = () => {
                     />
                     <div className="event-body">
                       <h3>{ev.title}</h3>
+                      <p className="event-date">{ev.date}</p>
                       <button
                         className="register-btn"
                         onClick={() =>
-                          window.open("https://forms.gle/exampleform", "_blank")
+                          window.open("https://docs.google.com/forms/d/e/1FAIpQLSe_0S14M37WCWM8Sgu5PxvhQCS5gGhfsJN18-V8QttOX_Opmg/viewform?usp=dialog", "_blank")
                         }
                       >
                         Register Now
@@ -148,6 +144,7 @@ const Home = () => {
                     />
                     <div className="event-body">
                       <h3>{ev.title}</h3>
+                      <p className="event-date">{ev.date}</p>
                       <button
                         className="register-btn"
                         onClick={() =>
@@ -168,13 +165,26 @@ const Home = () => {
         <section id="contact" className="section contact">
           <div className="contact-info">
             <h3>Contact Us</h3>
+            <p>Ajith : +91 70193 68535 </p>
+            <p>Afnan : +91 6363 668 845 </p>
             <p>
               Have queries? Reach us at{" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>
-              
             </p>
+            <div className="social-links">
+              <a
+                href="https://www.instagram.com/spardha__3.0?igsh=YnE4NGd3cG83azN2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
           </div>
         </section>
       </main>
@@ -186,9 +196,9 @@ const Home = () => {
           <a href="#nontechnical">Non-Technical</a> | <a href="#contact">Contact</a>
         </div>
         <p>© {year} City Engineering College — All Rights Reserved</p>
-        <p>Designed and Developed by<strong> J Gautham </strong> </p>
+        <p>Designed and Developed by <strong>J Gautham</strong></p>
         <p>
-          Contact me {" "}
+          Contact me{" "}
           <a href="mailto:jgautham42@gmail.com">Here</a>
         </p>
       </footer>

@@ -50,46 +50,49 @@ const CircuitDebugging = () => {
             >
               Register Now
             </a>
+            <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/Debug_Circuit_Rules.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 
         {/* Details Section */}
         <div className="details-grid">
           <div>
-            <h3>Event Structure</h3>
-            <p>• Round 1 – Identify and fix circuit faults.</p>
-            <p>• Round 2 – Optimize a working circuit for performance.</p>
-            <p>• Round 3 – Bonus challenge (time-based debugging).</p>
+            <h3>Venue</h3>
+            <p>• ECE department </p>
+
           </div>
 
           <div>
-            <h3>Rules & Guidelines</h3>
-            <p>• Individual participation only.</p>
-            <p>• Use of simulators or online tools is prohibited.</p>
-            <p>• Judges’ decisions are final and binding.</p>
+            <h3>Team size : </h3>
+            <p>• 2 to 3 members per team</p>
+
           </div>
 
           <div>
-            <h3>Judging Criteria</h3>
-            <p>• Accuracy of debugging</p>
-            <p>• Time taken to solve</p>
-            <p>• Optimization and creativity</p>
+            <h3>Registration fee :</h3>
+            <p>• 100 rupee per head..</p>
+
           </div>
         </div>
 
         {/* Contact Section */}
-        <div className="contact-details">
-          <h3>Contact</h3>
-          <p>
-            <strong>Event Coordinator:</strong> Rahul S<br />
-            <strong>Phone:</strong> +91 98765 43210<br />
+        <div>
+            <h3>Contact</h3>
+            <p>Shivam Sinha : 8296102293</p>
+            <p>Dattaraj Joshi : 8867007424</p>
+
             <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>
-          </p>
-        </div>
-
+          </div>
         {/* Social Links */}
         <div className="social-links">
           <a href="https://www.instagram.com/spardha__3.0?igsh=YnE4NGd3cG83azN2" target="_blank" rel="noopener noreferrer">

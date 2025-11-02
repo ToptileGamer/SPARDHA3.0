@@ -40,6 +40,14 @@ const WebCraft = () => {
                       >
                         Register Now
                       </button>
+                      <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/WEBCRAFT_BROCHURE.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 

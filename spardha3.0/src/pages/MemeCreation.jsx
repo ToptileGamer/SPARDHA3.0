@@ -44,18 +44,28 @@ const MemeCreation = () => {
 
         <div className="details-grid">
           <div>
-            <h3>Details</h3>
-            <p>Theme: Tech & College Life</p>
-            <p>Format: JPEG/PNG</p>
+            <h3>Team size: </h3>
+            <p>2-5 members per team</p>
+          </div>
+          
+          <div>
+            <h3>Venue: </h3>
+            <p> Seminar Hall</p>
           </div>
           <div>
-            <h3>Rules</h3>
-            <p>No plagiarism or offensive content.</p>
+            <h3>Registration fee: </h3>
+            <p>₹ 150 </p>
           </div>
-          <strong>Email:</strong> {" "}
+          <div>
+            <h3>Contact</h3>
+            <p>Soumya.P - 8618571512</p>
+            <p>Barani.R – 9483305229</p>
+            <p>Dhanushree.C - 6364686033</p>
+            <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>
+          </div>
         </div>
         <div className="social-links">
           <div className="social-links">

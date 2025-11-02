@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./EventPage.css";
-import bg from "../assets/main_page_banners/charads.jpg";
+import bg from "../assets/posters/charadposter.jpeg";
 
 const TechCharades = () => {
   const navigate = useNavigate();
@@ -27,8 +27,8 @@ const TechCharades = () => {
           <div className="poster-info">
             <h3>About the Event</h3>
             <p>
-              Play the ultimate guessing game where gestures replace words.
-              Teams compete to decode tech terms in time-bound rounds.
+             Players act out technical terms, topics, or concepts (from engineering, science, or technology subjects) without speaking,
+              while their teammates try to guess the correct term within a set time limit.
             </p>
             <button
                         className="register-btn"
@@ -43,15 +43,24 @@ const TechCharades = () => {
 
         <div className="details-grid">
           <div>
-            <h3>Rounds</h3>
-            <p>Preliminary & Final rounds.</p>
+            <h3>Team size: </h3>
+            <p>4 per team</p>
+          </div>
+          
+          <div>
+            <h3>Venue: </h3>
+            <p> ECE department</p>
           </div>
           <div>
-            <h3>Rules</h3>
-            <p>No verbal hints allowed.</p>
+            <h3>Registration fee: </h3>
+            <p>50 rupee per head</p>
           </div>
           <div>
-            <strong>Contact:</strong> {" "}
+            <h3>Contact</h3>
+            <p>Varshini : 8660888582</p>
+            <p>Pragna : 9480269836</p>
+            <p>Jeevesh : 9448011170</p>
+            <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>

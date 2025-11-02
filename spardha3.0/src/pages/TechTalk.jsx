@@ -19,7 +19,7 @@ const TechTalk = () => {
           ← Back to Events
         </button>
 
-        <h2>Non-Technical Event</h2>
+        <h2>Technical Event</h2>
         <p className="subtitle">
           Inspiring discussions with experts and innovators.
         </p>
@@ -45,15 +45,24 @@ const TechTalk = () => {
 
         <div className="details-grid">
           <div>
-            <h3>Topics</h3>
-            <p>AI, Startups, and Future Tech</p>
+            <h3>Team size: </h3>
+            <p>Individual</p>
+          </div>
+          
+          <div>
+            <h3>Venue: </h3>
+            <p> Seminar Hall</p>
           </div>
           <div>
-            <h3>Venue</h3>
-            <p>Seminar Hall — Block A</p>
+            <h3>Registration fee: </h3>
+            <p>₹ 150 </p>
           </div>
           <div>
-            <strong>Contact:</strong> {" "}
+            <h3>Contact</h3>
+            <p>Soumya.P - 8618571512</p>
+            <p>Barani.R – 9483305229</p>
+            <p>Dhanushree.C - 6364686033</p>
+            <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>

@@ -22,7 +22,7 @@ const GameOfTetrons = () => {
           ← Back to Events
         </button>
 
-        <h2>Non-Technical Event</h2>
+        <h2>Technical Event</h2>
         <p className="subtitle">Think fast, play smart — where logic meets fun!</p>
 
         {/* POSTER AND INFO SECTION */}
@@ -50,6 +50,16 @@ const GameOfTetrons = () => {
             >
               Register Now
             </a>
+            <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/got_BROCHURE.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
+
+
           </div>
         </div>
 

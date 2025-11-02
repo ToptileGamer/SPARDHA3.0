@@ -43,6 +43,14 @@ const PromptVerse = () => {
                       >
                         Register Now
                       </button>
+                      <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/PROMPT_BROUCHER.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 
@@ -53,10 +61,10 @@ const PromptVerse = () => {
               <strong>Date:</strong> Nov 20, 2025
             </p>
             <p>
-              <strong>Venue:</strong> CEC Main Auditorium
+              <strong>Venue:</strong> ECE department 
             </p>
             <p>
-              <strong>Team Size:</strong> 2–4 Members
+              <strong>Team Size:</strong>  4 per team
             </p>
           </div>
           <div>
@@ -66,8 +74,9 @@ const PromptVerse = () => {
           </div>
           <div>
             <h3>Contact</h3>
-            <p>Darshan B S — 9353189063</p>
-            <p>Aryan Tiwari — 8867122896</p>
+            <p>Varshini : 8660888582</p>
+            <p>Pragna : 9480269836</p>
+            <p>Jeevesh : 9448011170</p>
             <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
