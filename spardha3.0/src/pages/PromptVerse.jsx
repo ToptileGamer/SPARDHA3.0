@@ -48,7 +48,7 @@ const PromptVerse = () => {
                       <button
   className="register-btn"
   onClick={() =>
-    window.open("/brochure/PROMPT_BROUCHER.pdf", "_blank")
+    window.open("https://promptverse-hackathon-s32so0r.gamma.site/", "_blank")
   }
 >
   View Brochure
