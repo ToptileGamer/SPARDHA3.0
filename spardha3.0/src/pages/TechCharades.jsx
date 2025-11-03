@@ -38,6 +38,14 @@ const TechCharades = () => {
                       >
                         Register Now
                       </button>
+                       <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/tech_charades.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 

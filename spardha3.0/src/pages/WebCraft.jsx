@@ -27,9 +27,10 @@ const WebCraft = () => {
           <div className="poster-info">
             <h3>About the Event</h3>
             <p>
-              WebCraft challenges participants to design and build a creative
-              web experience from scratch. Emphasis is on user interface,
-              responsiveness, and originality.
+              Unleash your creativity and coding skills, an ultimate web development showdown! From building smart, 
+              functional web apps to crafting dynamic, AI-powered masterpieces, 
+              which test your design sense, backend logic, and innovation under pressure.
+               Bring your best ideas, your coding, and let your web magic shine!
             </p>
 
             <button
@@ -52,16 +53,7 @@ const WebCraft = () => {
         </div>
 
         <div className="details-grid">
-          <div>
-            <h3>Event Details</h3>
-            <p>Date: Nov 22–23, 2025</p>
-            <p>Venue: CEC Innovation Lab</p>
-            <p>Team Size: 2–3</p>
-          </div>
-          <div>
-            <h3>Rules</h3>
-            <p>No prebuilt templates. Use of open-source tools allowed.</p>
-          </div>
+          
           <div>
             
             <strong>Contact:</strong> {" "}

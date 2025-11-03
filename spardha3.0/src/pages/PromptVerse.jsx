@@ -29,10 +29,12 @@ const PromptVerse = () => {
           <div className="poster-info">
             <h3>About the Event</h3>
             <p>
-              PromptVerse combines innovation and artificial intelligence in a
-              hackathon-style competition. Participants craft prompts for AI
-              models to solve real-world challenges in areas like business,
-              sustainability, education, and health.
+              PromptVerse brings together creativity and artificial intelligence in a hackathon-style challenge.
+               Teams will craft innovative AI prompts and then bring them to life using AI tools.
+                The focus is on imagination, solution-thinking, and execution — across themes such as “Business & productivity and Innovation”,
+                 “Sustainabilty and Environment”, “Health Fitness and WellBeing”, “Education Learning and Research”.
+                  Participants will get real-world experience in ideation, design, and presentation.
+
             </p>
 
            <button
@@ -56,27 +58,23 @@ const PromptVerse = () => {
 
         <div className="details-grid">
           <div>
-            <h3>Event Details</h3>
-            <p>
-              <strong>Date:</strong> Nov 20, 2025
-            </p>
-            <p>
-              <strong>Venue:</strong> ECE department 
-            </p>
-            <p>
-              <strong>Team Size:</strong>  4 per team
-            </p>
+            <h3>Team size: </h3>
+            <p>2-4 members per team</p>
+          </div>
+          
+          <div>
+            <h3>Venue: </h3>
+            <p> CAD LAB (C-507, C-508)</p>
           </div>
           <div>
-            <h3>Structure</h3>
-            <p>Round 1: Ideation & Prompt Pitch</p>
-            <p>Round 2: Build & Showcase</p>
+            <h3>Registration fee: </h3>
+            <p>₹ 150 </p>
           </div>
           <div>
             <h3>Contact</h3>
-            <p>Varshini : 8660888582</p>
-            <p>Pragna : 9480269836</p>
-            <p>Jeevesh : 9448011170</p>
+            <p>Darshan B S – 9353189063</p>
+            <p>Ashutosh B Cherekar – 9108677151    </p>
+            <p>Aryan Tiwari – 8867122896</p>
             <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in

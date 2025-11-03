@@ -82,7 +82,7 @@ const Home = () => {
 
         {/* ABOUT */}
         <section id="about" className="section about">
-          <h5 className="text-center mx-auto">IEEE STUDENTS WILL BE GETTING 20% DISCOUNT ON ANY EVENT REGISTRATION</h5>
+          <h5 className="text-center mx-auto">(IEEE STUDENTS WILL BE GETTING 20% DISCOUNT ON ANY EVENT REGISTRATION)</h5>
           <h2>About SPARDHA 3.0</h2>
           <p className="text-center mx-auto" style={{ maxWidth: "900px" }}>
             SPARDHA 3.0 ,hosted by City Engineering College, is a vibrant multi-disciplinary college event featuring both technical and non-technical competitions, 

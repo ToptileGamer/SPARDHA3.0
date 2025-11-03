@@ -39,6 +39,14 @@ const MemeCreation = () => {
             >
               Register Now
             </a>
+            <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/meme_brochure.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 

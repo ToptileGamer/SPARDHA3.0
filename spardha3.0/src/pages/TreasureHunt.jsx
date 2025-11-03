@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./EventPage.css";
-import bg from "../assets/main_page_banners/trehun.jpeg";
+import bg from "../assets/posters/trehunpos.jpeg";
 
 const TreasureHunt = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const TreasureHunt = () => {
           ← Back to Events
         </button>
 
-        <h2>NoTechnical Event</h2>
+        <h2>Non-Technical Event</h2>
         <p className="subtitle">Find clues, solve puzzles, and race to victory!</p>
 
         <div className="poster-section">
@@ -38,20 +38,37 @@ const TreasureHunt = () => {
                       >
                         Register Now
                       </button>
+                      <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/trehun.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 
         <div className="details-grid">
           <div>
-            <h3>Format</h3>
-            <p>Multiple checkpoints with tasks.</p>
+            <h3>Team size: </h3>
+            <p>2-3 members per team</p>
+          </div>
+          
+          <div>
+            <h3>Venue: </h3>
+            <p> IOT LAB</p>
           </div>
           <div>
-            <h3>Rules</h3>
-            <p>Teams must stay together. No external help.</p>
+            <h3>Registration fee: </h3>
+            <p>₹ 100 </p>
           </div>
           <div>
-            <strong>Contact:</strong> {" "}
+            <h3>Contact</h3>
+            <p>Srujan M S – 8904547681</p>
+            <p>Ashutosh B Cherekar – 9108677151    </p>
+            <p>MD Yousuf – 9845717886</p>
+            <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>

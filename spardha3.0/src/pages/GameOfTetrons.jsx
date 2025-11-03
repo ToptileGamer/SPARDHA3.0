@@ -31,15 +31,10 @@ const GameOfTetrons = () => {
           <div className="poster-info">
             <h3>About the Event</h3>
             <p>
-              Game of Tetrons is a thrilling team-based puzzle challenge that
-              combines quick thinking, teamwork, and strategy. Participants
-              solve interconnected puzzles that test problem-solving, logic, and
-              coordination — with each round increasing in difficulty.
-            </p>
-            <p>
-              Whether you’re a puzzle enthusiast or just love a good mental
-              challenge, this event guarantees adrenaline, laughter, and
-              surprises at every turn.
+              The Game of Tetrons, an electrifying showdown of logic, speed, and strategy where every move counts! 
+              Teams will battle against the clock to solve challenges, decode broken logic,
+               and face intense buzzer rounds that test their technical mastery and presence of mind. With quick thinking,
+               sharp teamwork, and coding brilliance as your weapons, rise above the chaos and prove your dominance. In this ultimate war of wits and code.
             </p>
 
             <a
@@ -66,21 +61,15 @@ const GameOfTetrons = () => {
         {/* DETAILS SECTION */}
         <div className="details-grid">
           <div>
-            <h3>Event Structure</h3>
-            <p>Round 1 — Logic Puzzles</p>
-            <p>Round 2 — Team Strategy Challenge</p>
-            <p>Round 3 — Final Showdown</p>
-          </div>
-          <div>
             <h3>Rules</h3>
-            <p>Team size: 2–4 members</p>
-            <p>No external aids or devices allowed.</p>
-            <p>Points are based on accuracy and completion time.</p>
+            <p>Team size: 3 to 5 participants (minimum of 3 and maximum of 5 participants)</p>
           </div>
           <div>
             <h3>Contact</h3>
-            <p>Email: tetrons@cityengineeringcollege.ac.in</p>
-            <p>Phone: +91 98765 43210</p>
+            <strong>Email:</strong> {" "}
+              <a href="mailto:techspardha@cityengineeringcollege.ac.in">
+                techspardha@cityengineeringcollege.ac.in
+              </a>
           </div>
         </div>
         <div className="social-links">

@@ -40,6 +40,14 @@ const TechTalk = () => {
                       >
                         Register Now
                       </button>
+                      <button
+  className="register-btn"
+  onClick={() =>
+    window.open("/brochure/TechTalk_brochure.pdf", "_blank")
+  }
+>
+  View Brochure
+</button>
           </div>
         </div>
 
