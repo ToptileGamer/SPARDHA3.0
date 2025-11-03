@@ -34,7 +34,7 @@ const Home = () => {
   useEffect(() => setYear(new Date().getFullYear()), []);
 
   const technicalEvents = [
-    { img: cirbug, title: "Circuit Debugging", date: "Date: 21 November 2025", path: "/circuit-debugging" },
+    { img: cirbug, title: "Circuit Debugging", date: "Date: 20 November 2025", path: "/circuit-debugging" },
     { img: promverPoster, title: "Prompt Verse", date: "Date: 20 November 2025", path: "/prompt-verse" },
     { img: webcraftPoster, title: "WebCraft", date: "Date: 21 November 2025", path: "/webcraft" },
     { img: terminalPoster, title: "Terminal Clash", date: "Date: 20 November 2025", path: "/terminal-clash" },

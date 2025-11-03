@@ -53,10 +53,27 @@ const WebCraft = () => {
         </div>
 
         <div className="details-grid">
+          <div>
+            <h3>Team size: </h3>
+            <p>2-4 Members per team</p>
+          </div>
           
           <div>
-            
-            <strong>Contact:</strong> {" "}
+            <h3>Venue: </h3>
+            <p> C-502,C-503,C-504</p>
+          </div>
+          <div>
+            <h3>Registration fee: </h3>
+            <p>₹ 100 Per Teamo </p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>Ajith Praveen - 7019368535</p>
+            <p>Amith - 8088729321</p>
+            <p>chetan - 7337788002</p>
+            <p>Neha S N - 9535844711</p>
+            <br></br>
+            <strong>Email:</strong> {" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
                 techspardha@cityengineeringcollege.ac.in
               </a>
