@@ -42,7 +42,7 @@ const MemeCreation = () => {
             <button
   className="register-btn"
   onClick={() =>
-    window.open("/brochure/meme_brochure.pdf", "_blank")
+    window.open("https://gamma.app/docs/Meme-Creation-Challenge-2025-zj3pnhcxx4adcfl", "_blank")
   }
 >
   View Brochure

@@ -43,7 +43,7 @@ const TechTalk = () => {
                       <button
   className="register-btn"
   onClick={() =>
-    window.open("/brochure/TechTalk_brochure.pdf", "_blank")
+    window.open("https://gamma.app/docs/TECH-TALK-oackbwzd5abzfwo", "_blank")
   }
 >
   View Brochure
