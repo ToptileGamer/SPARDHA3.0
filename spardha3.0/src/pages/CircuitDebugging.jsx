@@ -19,6 +19,7 @@ const CircuitDebugging = () => {
 
       {/* CONTENT */}
       <section className="event-content">
+        
         <h2>Technical Event</h2>
         <p className="subtitle">
           Analyze, Debug & Fix — test your circuit-solving skills!
