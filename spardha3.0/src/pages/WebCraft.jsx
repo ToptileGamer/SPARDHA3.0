@@ -64,7 +64,7 @@ const WebCraft = () => {
           </div>
           <div>
             <h3>Registration fee: </h3>
-            <p>₹ 100 Per Teamo </p>
+            <p>₹ 100 Per Team </p>
           </div>
           <div>
             <h3>Contact</h3>

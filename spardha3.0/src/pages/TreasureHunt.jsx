@@ -61,7 +61,7 @@ const TreasureHunt = () => {
           </div>
           <div>
             <h3>Registration fee: </h3>
-            <p>₹ 100 </p>
+            <p>₹ 100/150 per team </p>
           </div>
           <div>
             <h3>Contact</h3>
