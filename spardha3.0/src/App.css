@@ -369,3 +369,82 @@ html {
   color: #000;
   box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffcc;
 }
+/* === SPONSORS SECTION (STATIC) === */
+.section.sponsors {
+  background: linear-gradient(180deg, #0a0f1a 0%, #0d1b2a 100%);
+  padding: 80px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.section.sponsors h2 {
+  font-size: 2.2rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  margin-bottom: 40px;
+}
+
+/* Static sponsor grid */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Each sponsor box */
+.sponsor-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Sponsor image */
+.sponsor-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Sponsor name */
+.sponsor-name {
+  font-weight: 600;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsor-box {
+    width: 160px;
+    padding: 15px;
+  }
+
+  .sponsor-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sponsor-name {
+    font-size: 0.95rem;
+  }
+}

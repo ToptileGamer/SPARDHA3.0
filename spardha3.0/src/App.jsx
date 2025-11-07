@@ -15,6 +15,11 @@ import terminalPoster from "./assets/main_page_banners/TERMINAL_CLASH.png";
 import trehunPoster from "./assets/main_page_banners/trehun.jpeg";
 import cqp2 from "./assets/main_page_banners/Cqp2.png";
 
+// Example sponsors (replace with real ones)
+import sponsor3 from "./assets/sponsors/param_foundation.jpg";
+import sponsor1 from "./assets/sponsors/spizzy.jpeg";
+import sponsor2 from "./assets/sponsors/strong_man.jpg";
+
 // pages
 import CircuitDebugging from "./pages/CircuitDebugging";
 import PromptVerse from "./pages/PromptVerse";
@@ -48,6 +53,12 @@ const Home = () => {
     { img: meme2, title: "Meme Creation", date: "Date: 20 November 2025", path: "/meme-creation" },
   ];
 
+  const sponsors = [
+    { img: sponsor1, name: "Spizzy" },
+    { img: sponsor2, name: "Strong Man" },
+    { img: sponsor3, name: "Param Foundation" },
+  ];
+
   return (
     <>
       {/* HEADER */}
@@ -73,25 +84,36 @@ const Home = () => {
         </div>
       </header>
 
-      {/* MAIN */}
       <main>
         {/* HERO SECTION */}
         <section className="hero container my-5">
           <img src={spardha} alt="Spardha Hero" />
         </section>
 
+        {/* SPONSORS SECTION */}
+<section id="sponsors" className="section sponsors">
+  <h2>Our Sponsors</h2>
+  <div className="container sponsor-grid">
+    {sponsors.map((s, i) => (
+      <div key={i} className="sponsor-box">
+        <img src={s.img} alt={s.name} className="sponsor-img" />
+        <p className="sponsor-name">{s.name}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+
+
         {/* ABOUT */}
         <section id="about" className="section about">
           <h5 className="text-center mx-auto">(IEEE STUDENTS WILL BE GETTING 20% DISCOUNT ON ANY EVENT REGISTRATION)</h5>
           <h2>About SPARDHA 3.0</h2>
           <p className="text-center mx-auto" style={{ maxWidth: "900px" }}>
-            SPARDHA 3.0 ,hosted by City Engineering College, is a vibrant multi-disciplinary college event featuring both technical and non-technical competitions, 
-            designed to showcase student talent, creativity, and teamwork across various domains.
-SPARDHA encourages participation from all college students, creating a platform for national and regional representation.
-<br></br>
-With each edition, SPARDHA sets new benchmarks in student engagement, building lasting memories and strengthening its reputation as a prestigious festival in the academic calendar. 
-The blend of technical and non-technical competitions ensures holistic development, making it a key tradition for City Engineering College. 
-SPARDHA thus stands out as a signature event fostering excellence, teamwork, and innovation through its diverse competitions and vibrant atmosphere.
+            SPARDHA 3.0, hosted by City Engineering College, is a vibrant
+            multi-disciplinary event featuring both technical and
+            non-technical competitions that showcase creativity, innovation, and teamwork.
           </p>
         </section>
 
@@ -102,13 +124,8 @@ SPARDHA thus stands out as a signature event fostering excellence, teamwork, and
             <div className="row g-4 justify-content-center">
               {technicalEvents.map((ev, i) => (
                 <div key={i} className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="event" style={{ cursor: "pointer" }}>
-                    <img
-                      src={ev.img}
-                      alt={ev.title}
-                      className="event-img"
-                      onClick={() => navigate(ev.path)}
-                    />
+                  <div className="event">
+                    <img src={ev.img} alt={ev.title} className="event-img" onClick={() => navigate(ev.path)} />
                     <div className="event-body">
                       <h3>{ev.title}</h3>
                       <p className="event-date">{ev.date}</p>
@@ -135,13 +152,8 @@ SPARDHA thus stands out as a signature event fostering excellence, teamwork, and
             <div className="row g-4 justify-content-center">
               {nonTechnicalEvents.map((ev, i) => (
                 <div key={i} className="col-lg-3 col-md-4 col-sm-6">
-                  <div className="event" style={{ cursor: "pointer" }}>
-                    <img
-                      src={ev.img}
-                      alt={ev.title}
-                      className="event-img"
-                      onClick={() => navigate(ev.path)}
-                    />
+                  <div className="event">
+                    <img src={ev.img} alt={ev.title} className="event-img" onClick={() => navigate(ev.path)} />
                     <div className="event-body">
                       <h3>{ev.title}</h3>
                       <p className="event-date">{ev.date}</p>
@@ -166,7 +178,7 @@ SPARDHA thus stands out as a signature event fostering excellence, teamwork, and
           <div className="contact-info">
             <h3>Contact Us</h3>
             <p>Ajith : +91 70193 68535 </p>
-            <p>Afnan : +91 6363 668 845 </p>
+            <p>Afnan : +91 63636 68845 </p>
             <p>
               Have queries? Reach us at{" "}
               <a href="mailto:techspardha@cityengineeringcollege.ac.in">
@@ -179,10 +191,7 @@ SPARDHA thus stands out as a signature event fostering excellence, teamwork, and
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
-                  alt="Instagram"
-                />
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
               </a>
             </div>
           </div>
@@ -198,8 +207,7 @@ SPARDHA thus stands out as a signature event fostering excellence, teamwork, and
         <p>© {year} City Engineering College — All Rights Reserved</p>
         <p>Designed and Developed by <strong>J Gautham</strong></p>
         <p>
-          Contact me{" "}
-          <a href="mailto:jgautham42@gmail.com">Here</a>
+          Contact me <a href="mailto:jgautham42@gmail.com">Here</a>
         </p>
       </footer>
     </>
